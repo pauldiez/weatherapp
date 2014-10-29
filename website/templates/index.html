@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ title }}</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        <script>document.write('<base href="' + document.location + '" />');</script>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    </head>
+
+    <body ng-controller="weatherCtrl">
+        <div class="container">
+            <h1>{{ title }}</h1>
+            <div class="row">
+                <form>
+                    <div>
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter city name"  ng-model="locationName">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit" value="Add City" ng-click="addForecastByLocation(locationName)">Add City</button>
+                            </span>
+                        </div>
+                    </div>
+                 </form>
+            </div>
+            <div class="row">
+                <div ng-show="errorMessage" class="alert alert-danger" role="alert">
+                   {$ errorMessage $}
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Forecast</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="forecast in forecasts">
+                            <td>{$ forecast.location $}</td>
+                            <td>{$ forecast.temp $} °C</td>
+                            <td>
+                                <a ng-click="refreshForecast(forecast)">
+                                    <span class="glyphicon glyphicon-refresh"></span>
+                                    <span>Refresh</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="{% static 'js/app.js' %}"></script>
+        <script src="{% static 'js/weatherFactory.js' %}"></script>
+        <script src="{% static 'js/weatherController.js' %}"></script>
+    </body>
+</html>

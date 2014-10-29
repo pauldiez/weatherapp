@@ -1,0 +1,28 @@
+/* page elements */
+html, body, .container {
+    height: 100%;
+}
+
+body {
+  padding: 10px;
+}
+
+a {
+  cursor: pointer;
+}
+
+/* page classes */
+.table{
+  width: 100%;
+}
+
+.container {
+    display: table;
+    vertical-align: middle;
+    width: 60%;
+}
+
+.row{
+    padding-bottom: 20px;
+}
+
