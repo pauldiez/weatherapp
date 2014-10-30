@@ -71,8 +71,8 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17628205" vertical-offset="0" max-vertical-offset="936">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.12820514" vertical-offset="0" max-vertical-offset="936">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -384,7 +384,11 @@
       <created>1414635194630</created>
       <updated>1414635194631</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated formatting on readme file">
+      <created>1414636733733</created>
+      <updated>1414636733733</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -430,7 +434,8 @@
     <MESSAGE value="cleaning up debug code" />
     <MESSAGE value="updated readme file with instructions" />
     <MESSAGE value="added documentation and code clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="added documentation and code clean up" />
+    <MESSAGE value="updated formatting on readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated formatting on readme file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -496,8 +501,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17628205" vertical-offset="0" max-vertical-offset="936">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.12820514" vertical-offset="0" max-vertical-offset="936">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>
