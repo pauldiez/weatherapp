@@ -4,7 +4,7 @@ from website import views
 # set website routes
 urlpatterns = patterns('',
 
-    #index - /
+    # index route
     url(r'^$', views.index, name='index')
 
 )

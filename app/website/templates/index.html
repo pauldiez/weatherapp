@@ -6,7 +6,6 @@
         <title>{{ title }}</title>
         {% load staticfiles %}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-        <script>document.write('<base href="' + document.location + '" />');</script>
         <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     </head>
 
@@ -54,9 +53,9 @@
                 </table>
             </div>
         </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
         <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="{% static 'js/app.js' %}"></script>
         <script src="{% static 'js/weatherFactory.js' %}"></script>
         <script src="{% static 'js/weatherController.js' %}"></script>
