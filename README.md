@@ -3,10 +3,10 @@ weatherapp
 
 Instructions:
 
-1.) git clone https://github.com/pauldiez/weatherapp.git
-2.) CD into vagrant directory (cd /weatherapp/vagrant)
-3.) Run vagrant command: vagrant up --provision
-4.) Open web browser (tested in chrome) to http://192.168.33.100
+- git clone https://github.com/pauldiez/weatherapp.git
+- CD into vagrant directory (cd /weatherapp/vagrant)
+- Run vagrant command: vagrant up --provision
+- Open web browser (tested in chrome) to http://192.168.33.100
 
 
 
