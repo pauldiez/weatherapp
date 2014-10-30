@@ -6,11 +6,11 @@ import json
 # get weather forecast
 def get(request, location):
 
+    #get weather api connection
     weather_api_key = '47fbdd1ede860986b11269467e18429b' #TODO(paul): refactor this api key into a config file.
     owm_api = pyowm.OWM(weather_api_key)
     observation = owm_api.weather_at_place(location)
 
-    # check for valid weather api connection
     if not observation:
 
         # return 404 not found
