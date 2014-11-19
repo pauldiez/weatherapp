@@ -27,7 +27,7 @@ angular.module('weatherApp').controller('weatherCtrl', ['$scope', 'weatherFactor
 
     // convert temp to celsius
     $scope.convertToCelsius = function(temp){
-        return parseFloat(300 - temp).toFixed(0);
+        return parseFloat(temp - 273.15).toFixed(0);
     };
 
     // add toronto weather forecast when app loads
